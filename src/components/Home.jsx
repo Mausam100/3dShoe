@@ -8,41 +8,46 @@ const Home = () => {
     setColor(newColor);
   };
   return (
-    <main className="flex">
+    <main className="flex bg-[#0e0e0e]">
       <CanvasContainer color={color} />
-      <div className='relative rounded-[3vw] flex flex-col items-center justify-center bg-zinc-600 w-full'>
-        <div className="space-x-4 p-4">
-        <button
-          onClick={() => handleColorChange("#94A3B8")}
-          className=" bg-slate-400 border h rounded p-2"
-        >
-          White
-        </button>
-        <button
-          onClick={() => handleColorChange("#7F1D1D")}
-          className="bg-red-900 border rounded p-2"
-        >
-          Red
-        </button>
-        <button
-          onClick={() => handleColorChange("#1E3A8A")}
-          className="bg-blue-900 border rounded p-2"
-        >
-          Blue
-        </button>
-        <button
-          onClick={() => handleColorChange("grey")}
-          className="bg-slate-500 border rounded p-2"
-        >
-          Green
-        </button>
-
+      <div className="relative rounded-[3vw] flex flex-col items-center justify-center bg-inherit w-full">
+        <div className="p-4 flex flex-col gap-4 items-center justify-center align-middle text-xl ovo-regular">
+          <button
+            onMouseMove={() => handleColorChange("#94A3B8")}
+            className="hover:text-slate-500 flex items-center justify-center gap-2 text-white hover:text-gray-400 rounded p-2"
+          >
+            <span className="w-10 h-[1px] inline-block bg-white"></span>
+            White
+          </button>
+          <button
+            onMouseMove={() => handleColorChange("#7F1D1D")}
+            className="hover:text-red-900 text-white rounded p-2"
+          >
+            Red
+          </button>
+          <button
+            onMouseMove={() => handleColorChange("#1E3A8A")}
+            className="hover:bg-blue-700 text-white rounded p-2"
+          >
+            Blue
+          </button>
+          <button
+            onMouseMove={() => handleColorChange("grey")}
+            className=" hover:text-gray-500 text-white text-black rounded p-2"
+          >
+            Green
+          </button>
         </div>
-        <div className=" absolute bottom-0 -left-32 text-white font-bold text-3xl bg-zinc-600 px-4 py-3 rounded-tl-2xl">
-        <button className=" border-white border-[1px] px-4 py-1 rounded-2xl" type="button">ORDER NOW</button>
+        <div className=" absolute bottom-0 -left-32 invery-0 font-bold text-3xl bg-inherit px-4 py-3 rounded-tl-2xl">
+          <button
+            className="text-white underline-offset-8 underline px-4 py-1 rounded-2xl ovo-regular"
+            type="button"
+          >
+            ORDER NOW
+          </button>
         </div>
       </div>
-    </main> 
+    </main>
   );
 };
 

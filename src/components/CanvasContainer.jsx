@@ -17,13 +17,13 @@ const CanvasContainer = ({ color }) => {
       style={{
         backgroundImage: `url(${bg})`,
       }}
-      className="relative h-[94vh] rounded-[2vw] bg-cover bg-center items-center "
+      className="relative h-[94vh] rounded-[2vw] bg-cover bg-center items-center bg-[#0e0e0e]"
     >
      
-      <div className="logo absolute top-0 left-0 bg-zinc-600  rounded-br-2xl">
-        <h1 className="text-white text-4xl font-bold px-4 py-3">#style</h1>
-        <div class="absolute w-[4vw] h-[2vw] top-[100%] left-[0%] rounded-full shadow-[-0.2vw_-1vw_0_#52525B]"></div>
-        <div class="absolute w-[4vw] h-[2vw] top-[0%] left-[100%] rounded-full shadow-[-0.2vw_-1vw_0_#52525B]"></div>
+      <div className="logo absolute top-0 left-0 bg-inherit text-[#0e0e0e] rounded-br-2xl">
+        <h1 className="text-white bg-inherit text-4xl rounded-xl font-bold px-4 py-3 ovo-regular">Shoes</h1>
+        {/* <div className="absolute w-[4vw] h-[2vw] top-[100%] left-[0%] rounded-full shadow-[-0.2vw_-1vw_0_#52525B]"></div>
+        <div className="absolute w-[4vw] h-[2vw] top-[0%] left-[100%] rounded-full shadow-[-0.2vw_-1vw_0_#52525B]"></div> */}
       </div>
       <Canvas
         style={{ width: "70vw" }}
