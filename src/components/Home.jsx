@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import 'remixicon/fonts/remixicon.css'; 
 import CanvasContainer from "./CanvasContainer";
 
 const Home = () => {
@@ -10,40 +11,53 @@ const Home = () => {
   return (
     <main className="flex bg-[#0e0e0e]">
       <CanvasContainer color={color} />
-      <div className="relative rounded-[3vw] flex flex-col items-center justify-center bg-inherit w-full">
-        <div className="p-4 flex flex-col gap-4 items-center justify-center align-middle text-xl ovo-regular">
+      <div className="relative rounded-[3vw] flex flex-col items-center bg-inherit w-full">
+          <div className="card flex flex-col px-8 pt-16">
+             <h1 className="text-white text-4xl mb-6 font-bold">Create your <br />own style</h1>
+             <p className="text-white mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quaerat delectus repudiandae.</p>
+
+             <h3 className=" text-white pl-8 text-xl">COLOR</h3>
+
+             
+
+          </div>
+        <div className="p-4 flex gap-4 mb-20 align-middle text-xl ovo-regular">
+          
           <button
-            onMouseMove={() => handleColorChange("#94A3B8")}
-            className="hover:text-slate-500 flex items-center justify-center gap-2 text-white hover:text-gray-400 rounded p-2"
+            onClick={() => handleColorChange("#94A3B8")}
+            className=" bg-[#606D88] border-2 w-10 h-10 rounded-full"
           >
-            <span className="w-10 h-[1px] inline-block bg-white"></span>
-            White
+            
           </button>
           <button
-            onMouseMove={() => handleColorChange("#7F1D1D")}
-            className="hover:text-red-900 text-white rounded p-2"
+          onClick={() => handleColorChange("#7F1D1D")}
+            className="bg-red-900 border-2 w-10 h-10 rounded-full"
           >
-            Red
           </button>
           <button
-            onMouseMove={() => handleColorChange("#1E3A8A")}
-            className="hover:bg-blue-700 text-white rounded p-2"
+          onClick={() => handleColorChange("#1E3A8A")}
+            className="bg-blue-700 border-2 w-10 h-10 rounded-full"
           >
-            Blue
+            
           </button>
           <button
-            onMouseMove={() => handleColorChange("grey")}
-            className=" hover:text-gray-500 text-white text-black rounded p-2"
+          onClick={() => handleColorChange("grey")}
+            className=" bg-gray-500 border-2 w-10 h-10 rounded-full"
           >
-            Green
+            
           </button>
         </div>
-        <div className=" absolute bottom-0 -left-32 invery-0 font-bold text-3xl bg-inherit px-4 py-3 rounded-tl-2xl">
+        <div className=" absolute bottom-0 -left-32 bg-inherit px-2 py-2 rounded-tl-2xl">
+          
           <button
-            className="text-white underline-offset-8 underline px-4 py-1 rounded-2xl ovo-regular"
+            className="text-slate-800 bg-cyan-300 text-xl flex items-center justify-stretch gap-20 border-2 rounded-tl-2xl rounded-lg py-1 px-2"
             type="button"
           >
-            ORDER NOW
+            <h3 className=" ml-12">
+
+          ADD TO CART
+              </h3>
+            <i className="ri-arrow-right-up-line text-2xl rounded-full border-2 px-1 bg-cyan-500"></i>
           </button>
         </div>
       </div>

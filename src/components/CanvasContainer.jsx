@@ -8,7 +8,6 @@ import {
   Environment,
   Text,
 } from "@react-three/drei";
-// import Text3d from "./Text3d";
 
 const CanvasContainer = ({ color }) => {
   
@@ -17,13 +16,11 @@ const CanvasContainer = ({ color }) => {
       style={{
         backgroundImage: `url(${bg})`,
       }}
-      className="relative h-[94vh] rounded-[2vw] bg-cover bg-center items-center bg-[#0e0e0e]"
+      className="relative h-[94vh] rounded-[2vw] bg-cover bg-bottom items-center bg-[#0e0e0e]"
     >
      
       <div className="logo absolute top-0 left-0 bg-inherit text-[#0e0e0e] rounded-br-2xl">
         <h1 className="text-white bg-inherit text-4xl rounded-xl font-bold px-4 py-3 ovo-regular">Shoes</h1>
-        {/* <div className="absolute w-[4vw] h-[2vw] top-[100%] left-[0%] rounded-full shadow-[-0.2vw_-1vw_0_#52525B]"></div>
-        <div className="absolute w-[4vw] h-[2vw] top-[0%] left-[100%] rounded-full shadow-[-0.2vw_-1vw_0_#52525B]"></div> */}
       </div>
       <Canvas
         style={{ width: "70vw" }}
@@ -54,6 +51,8 @@ const CanvasContainer = ({ color }) => {
               maxPolarAngle={Math.PI / 2}
               enableZoom={false}
               enablePan={false}
+              autoRotate={true}
+              autoRotateSpeed={5}
             />
           </group>
         </Suspense>

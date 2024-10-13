@@ -12,9 +12,11 @@
   "dependencies": {
     "@react-three/drei": "^9.114.0",
     "@react-three/fiber": "^8.17.8",
+    "@remixicon/react": "^4.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2",
+    "remixicon": "^4.3.0",
     "three": "^0.169.0"
   },
   "devDependencies": {
