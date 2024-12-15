@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <main className="bg-[#0e0e0e] p-4 w-screen h-screen overflow-hidden">
+    <main className="bg-[#0e0e0e] p-4 w-screen overflow-hidden">
       <Navbar />
       <Home></Home>
     </main>

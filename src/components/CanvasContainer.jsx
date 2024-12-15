@@ -10,20 +10,24 @@ import {
 } from "@react-three/drei";
 
 const CanvasContainer = ({ color }) => {
-  
   return (
     <div
       style={{
         backgroundImage: `url(${bg})`,
       }}
-      className="relative h-[94vh] rounded-[2vw] bg-cover bg-bottom items-center bg-[#0e0e0e]"
+      className="relative h-[50vh] md:h-[94vh] rounded-[2vw] bg-cover bg-bottom items-center bg-[#0e0e0e]"
     >
-     
-      <div className="logo absolute top-0 left-0 bg-inherit text-[#0e0e0e] rounded-br-2xl">
-        <h1 className="text-white bg-inherit text-4xl rounded-xl font-bold px-4 py-3 ovo-regular">Shoes</h1>
+      {/* Logo Section */}
+      <div className="logo absolute top-2 left-2 md:top-0 md:left-0 bg-inherit text-[#0e0e0e] rounded-br-2xl">
+        <h1 className="text-white bg-inherit text-2xl md:text-4xl rounded-xl font-bold px-2 md:px-4 py-1 md:py-3 ovo-regular">
+          Shoes
+        </h1>
       </div>
+
+      {/* Canvas Section */}
       <Canvas
-        style={{ width: "70vw" }}
+        className="w-full h-full"
+        style={{ width: "100%", height: "100%" }}
         camera={{ position: [0, 0, 5.5], fov: 40 }}
       >
         <ambientLight intensity={0.7} />
